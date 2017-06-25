@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texas Hold'em</title>
+        <link rel="stylesheet" media="all" type="text/css" href="project1.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="gameTable">
+            <!-- START PLAYER ONE -->
+            <div id="playerOne" class="player">
+                <div class="hand">
+                    <div class="card" id="HA">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2z8nVlc88mZNkoZawsnPdDRxzylO59zfS_FWqZrJ9QWvlM87"/>
+                    </div>
+                    <div class="card" id="SA">
+                        <img src="data:image/png;base64,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"/>
+                    </div>
+                </div>
+                <figure class="player-info">
+                    <img src="avatar.jpg" />
+                    <figcaption class="player-name">P1</figcaption>
+                </figure>
+                <div class="player-purse">
+                    <div class="purse-graphic">
+                    </div>
+                    <div class="purse-value">2000</div>
+                </div>
+            </div>
+            
+            <!-- START PLAYER TWO -->
+            <div id="playerTwo" class="player">
+                <div class="hand">
+                    <div class="card hidden">
+                    </div>
+                    <div class="card hidden">
+                    </div>
+                </div>
+                <figure class="player-info">
+                    <img src="avatar.jpg" />
+                    <figcaption class="player-name">P2</figcaption>
+                </figure>
+                <div class="player-purse">
+                    <div class="purse-graphic">
+                    </div>
+                    <div class="purse-value">750</div>
+                </div>
+            </div>
+
+
+            <!-- START PLAYER THREE -->
+            <div id="playerThree" class="player">
+                <div class="hand">
+                    <div class="card hidden">
+                       
+                    </div>
+                    <div class="card hidden">
+                        
+                    </div>
+                </div>
+                <figure class="player-info">
+                    <img src="avatar.jpg" />
+                    <figcaption class="player-name">P3</figcaption>
+                </figure>
+                <div class="player-purse">
+                    <div class="purse-graphic">
+                    </div>
+                    <div class="purse-value">1500</div>
+                </div>
+            </div>
+
+
+            <!-- START PLAYER FOUR -->
+            <div id="playerFour" class="player">
+                <div class="hand">
+                    <div class="card hidden">
+                    </div>
+                    <div class="card hidden">
+                    </div>
+                </div>
+                <figure class="player-info">
+                    <img src="avatar.jpg" />
+                    <figcaption class="player-name">P4</figcaption>
+                </figure>
+                <div class="player-purse">
+                    <div class="purse-graphic">
+                    </div>
+                    <div class="purse-value">500</div>
+                </div>
+            </div>
+
+            <!-- START CARD POOL -->
+            <div id="cardPool">
+                <div id="deck" class="card">
+                </div>
+                <div id="flop">
+                    <div class="card">
+                    </div>
+                    <div class="card">
+                    </div>
+                    <div class="card">
+                    </div>
+                </div>
+                <div id="turn-river">
+                    <div class="card hidden">
+                    </div>
+                    <div class="card hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

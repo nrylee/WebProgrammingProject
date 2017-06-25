@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#gameTable {
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 5px solid darkgreen;
+    background-image: url("http://media.istockphoto.com/photos/green-poker-table-felt-background-picture-id467583755?k=6&m=467583755&s=612x612&w=0&h=yYdwoNN2UZkMCxAAEf5PyltMphePlfEAzw6oEeYMpEU=");
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#playerOne {
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    right: 0px;
+    height: 25%;
+}
+
+.player {
+    border: 1px solid lightgrey;    
+}
+.card {
+    z-index: 25;
+}
+.player .card.hidden:not(:first-of-type) {
+    margin-left: -20px;
+    margin-top: 10px;
+    z-index: 20;
+}
+.player > .player-info {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.player-purse {
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+}
+.purse-graphic {
+    display: none;
+}
+.purse-value {
+    background-color: rgba(255,255,255,0.45);
+
+}
+.purse-value:before {
+    content: '$';
+}
+.player > .player-info > figure > img {
+    width: 50px;
+    height: 50px;
+    border:1px solid #2b2b2b;
+    background-color: darkslategray;
+}
+
+#playerTwo, #playerThree, #playerFour {
+    display: block;
+    position: absolute;
+    top:0px;
+    width:33.3%;
+    height: 20%;
+    font-size: 0.75em;
+}
+#playerTwo {
+    left:0%;
+}
+#playerThree {
+    left:33.3%;
+}
+#playerFour {
+    left:66.6%;
+}
+#cardPool {
+    position: absolute;
+    top:20%;
+    bottom:25%;
+    left:0%;
+    right: 0%;
+}
+
+#deck {
+    position: absolute;
+    left:0px;
+    width: 50px;
+}
+#flop {
+    position: absolute;
+    top:0%;
+    right:0%;
+    height: 50%;
+}
+#turn-river {
+    position: absolute;
+    top:50%;
+    right:0%;
+    height: 50%;
+}
+#deck.card, #cardPool .card.hidden {
+    background-image: url("http://www.stepbystep.com/wp-content/uploads/2013/04/How-to-Do-Full-Deck-Setups-And-False-Cuts-in-Magic.jpg");
+    background-size: 50px 70px;
+}
+.card {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: white;
+    border-color: #2b2b2b;
+    box-shadow: 2px 2px 2px 2px #2b2b2b;
+    margin:3px;
+}
+#playerOne .card, #cardPool .card {
+    width:50px;
+    height: 70px;
+    
+}
+
+.card.hidden {
+   background-image: url("http://www.stepbystep.com/wp-content/uploads/2013/04/How-to-Do-Full-Deck-Setups-And-False-Cuts-in-Magic.jpg");
+   background-size: 75px 110px;
+}
+.card#HA img{
+   object-fit: cover;
+   width: 50 px;
+   height: 100px;
+}
+.card#SA img{
+   object-fit: cover;
+   width: 50 px;
+   height: 100px;
+}
+@media screen and (min-width: 768px) {
+    .card {
+        width:50px;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .card {
+        width: 75px;
+        height: 105px;
+    }
+}
+/** START DESKTOP RESOLUTIONS **/
+@media screen and (min-width: 1024px) {
+
+}
