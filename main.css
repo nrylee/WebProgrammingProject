@@ -10,8 +10,11 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
-    border: 5px solid darkgreen;
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgb(0,40,0);
     background-color: olivedrab;
+    /* background-image: url('greenfelt.jpg'); */   
 }
 
 body {
@@ -24,11 +27,10 @@ body {
     left:0px;
     right: 0px;
     height: 25%;
+    border-top: 1px solid lightgrey;    
+    
 }
 
-.player {
-    border: 1px solid lightgrey;    
-}
 .card {
     z-index: 25;
 }
@@ -41,6 +43,15 @@ body {
     position: absolute;
     right: 0px;
     bottom: 0px;
+}
+.player-info > img {
+    width:25px;
+    padding-left: 2px;
+    padding-right:2px;
+    padding-top: 4px;
+}
+.player-info .player-name {
+    text-align: center;
 }
 .player-purse {
     position: absolute;
@@ -63,13 +74,16 @@ body {
     border:1px solid #2b2b2b;
     background-color: darkslategray;
 }
-
+#playerTwo, #playerThree {
+    border-right: 1px solid lightgrey;        
+}
 #playerTwo, #playerThree, #playerFour {
     display: block;
     position: absolute;
     top:0px;
     width:33.3%;
     height: 20%;
+    border-bottom: 1px solid lightgrey;    
     font-size: 0.75em;
 }
 #playerTwo {
@@ -106,23 +120,20 @@ body {
     right:0%;
     height: 50%;
 }
-#deck.card {
+#deck .card {
     background-color: red;
 }
 .card {
     display: block;
     float: left;
     width: 25px;
-    height: 35px;
-    border-radius: 2px;
-    background-color: white;
-    border-color: #2b2b2b;
+    height: 31px;
     box-shadow: 2px 2px 2px 2px #2b2b2b;
     margin:3px;
 }
 #playerOne .card, #cardPool .card {
     width:50px;
-    height: 70px;
+    height: 63px;
 }
 
 .card.hidden {
@@ -132,17 +143,51 @@ body {
 @media screen and (min-width: 768px) {
     .card {
         width:50px;
-        height: 70px;
+        height: 63px;
     }
 }
 
 @media screen and (min-width: 980px) {
     .card {
         width: 75px;
-        height: 105px;
+        height: 94px;
     }
 }
 /** START DESKTOP RESOLUTIONS **/
 @media screen and (min-width: 1024px) {
+    .card {
+        width: 60px;
+        height: 75px;
+    }
+    #deck, #flop, #turn-river {
+        top:0%;
+        bottom: 0%;
+        width:33.33%;
+        margin: auto 0;
+    }
+    #deck {
+        text-align: center;
+        left:0%;
+    }
+    #flop {
+        text-align: right;
+        left:33.33%;
+    }
+    #turn-river {
+        text-align: left;
+        right:0%;
+        padding-left: 10px;
+    }
+    #cardPool .card {
+        float: none;
+        display: inline-block;
+    }
 
+}
+
+@media screen and (min-width: 1920px) {
+    .card {
+        width: 75px;
+        height: 94px;
+    }
 }

@@ -3,6 +3,7 @@
     <head>
         <title>Texas Hold'em</title>
         <link rel="stylesheet" media="all" type="text/css" href="main.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="cards.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -10,15 +11,11 @@
             <!-- START PLAYER ONE -->
             <div id="playerOne" class="player">
                 <div class="hand">
-                    <div class="card" id="HA">
-                        HA
-                    </div>
-                    <div class="card" id="SA">
-                        SA
-                    </div>
+                    <div class="card" id="HA"></div>
+                    <div class="card" id="SA"></div>
                 </div>
                 <figure class="player-info">
-                    <img src="avatar.jpg" />
+                    <img src="smallavatar.png" />
                     <figcaption class="player-name">P1</figcaption>
                 </figure>
                 <div class="player-purse">
@@ -37,7 +34,7 @@
                     </div>
                 </div>
                 <figure class="player-info">
-                    <img src="avatar.jpg" />
+                    <img src="smallavatar.png" />
                     <figcaption class="player-name">P2</figcaption>
                 </figure>
                 <div class="player-purse">
@@ -57,7 +54,7 @@
                     </div>
                 </div>
                 <figure class="player-info">
-                    <img src="avatar.jpg" />
+                    <img src="smallavatar.png" />
                     <figcaption class="player-name">P3</figcaption>
                 </figure>
                 <div class="player-purse">
@@ -77,7 +74,7 @@
                     </div>
                 </div>
                 <figure class="player-info">
-                    <img src="avatar.jpg" />
+                    <img src="smallavatar.png" />
                     <figcaption class="player-name">P4</figcaption>
                 </figure>
                 <div class="player-purse">
@@ -89,14 +86,20 @@
 
             <!-- START CARD POOL -->
             <div id="cardPool">
-                <div id="deck" class="card">
+                <div id="deck">
+                    <div class="card">
+                    </div>
+                    <div class="pot">
+                        Pot: 
+                        <span class="purse-value">400</span>
+                    </div>
                 </div>
                 <div id="flop">
-                    <div class="card">
+                    <div class="card" id="S3">
                     </div>
-                    <div class="card">
+                    <div class="card" id="DQ">
                     </div>
-                    <div class="card">
+                    <div class="card" id="CA">
                     </div>
                 </div>
                 <div id="turn-river">

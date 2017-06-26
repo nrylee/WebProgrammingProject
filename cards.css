@@ -1,0 +1,370 @@
+.card {
+    background-size: 100% 100%;
+}
+.card.hidden, #deck .card {
+    background-image: url('cards/BACK.png')
+}
+
+#playerOne .card:hover {
+    animation-name: rotateCard;
+    animation-duration: 2s;
+}
+
+@keyframes rotateCard {
+    0%   {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    25%  {
+        -webkit-transform: rotateY(90deg);
+        transform: rotateY(90deg);
+        
+    }
+    50%  {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    75%  {
+        -webkit-transform: rotateY(270deg);
+        transform: rotateY(270deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+/* HEARTS */
+#H2.card {
+    background-image: url('cards/H2.png');
+}
+#H3.card {
+    background-image: url('cards/H3.png');
+}
+#H4.card {
+    background-image: url('cards/H4.png');
+}
+#H5.card {
+    background-image: url('cards/H5.png');
+}
+#H6.card {
+    background-image: url('cards/H6.png');
+}
+#H7.card {
+    background-image: url('cards/H7.png');
+}
+#H8.card {
+    background-image: url('cards/H8.png');
+}
+#H9.card {
+    background-image: url('cards/H9.png');
+}
+#H10.card {
+    background-image: url('cards/H10.png');
+}
+#HJ.card {
+    background-image: url('cards/HJ.png');
+}
+#HQ.card {
+    background-image: url('cards/HQ.png');
+}
+#HK.card {
+    background-image: url('cards/HK.png');
+}
+#HA.card {
+    background-image: url('cards/HA.png');
+}
+
+/* DIAMONDS */
+#D2.card {
+    background-image: url('cards/D2.png');
+}
+#D3.card {
+    background-image: url('cards/D3.png');
+}
+#D4.card {
+    background-image: url('cards/D4.png');
+}
+#D5.card {
+    background-image: url('cards/D5.png');
+}
+#D6.card {
+    background-image: url('cards/D6.png');
+}
+#D7.card {
+    background-image: url('cards/D7.png');
+}
+#D8.card {
+    background-image: url('cards/D8.png');
+}
+#D9.card {
+    background-image: url('cards/D9.png');
+}
+#D10.card {
+    background-image: url('cards/D10.png');
+}
+#DJ.card {
+    background-image: url('cards/DJ.png');
+}
+#DQ.card {
+    background-image: url('cards/DQ.png');
+}
+#DK.card {
+    background-image: url('cards/DK.png');
+}
+#DA.card {
+    background-image: url('cards/DA.png');
+}
+
+/* CLUBS */
+#C2.card {
+    background-image: url('cards/C2.png');
+}
+#C3.card {
+    background-image: url('cards/C3.png');
+}
+#C4.card {
+    background-image: url('cards/C4.png');
+}
+#C5.card {
+    background-image: url('cards/C5.png');
+}
+#C6.card {
+    background-image: url('cards/C6.png');
+}
+#C7.card {
+    background-image: url('cards/C7.png');
+}
+#C8.card {
+    background-image: url('cards/C8.png');
+}
+#C9.card {
+    background-image: url('cards/C9.png');
+}
+#C10.card {
+    background-image: url('cards/C10.png');
+}
+#CJ.card {
+    background-image: url('cards/CJ.png');
+}
+#CQ.card {
+    background-image: url('cards/CQ.png');
+}
+#CK.card {
+    background-image: url('cards/CK.png');
+}
+#CA.card {
+    background-image: url('cards/CA.png');
+}
+
+/* SPASES */
+#S2.card {
+    background-image: url('cards/S2.png');
+}
+#S3.card {
+    background-image: url('cards/S3.png');
+}
+#S4.card {
+    background-image: url('cards/S4.png');
+}
+#S5.card {
+    background-image: url('cards/S5.png');
+}
+#S6.card {
+    background-image: url('cards/S6.png');
+}
+#S7.card {
+    background-image: url('cards/S7.png');
+}
+#S8.card {
+    background-image: url('cards/S8.png');
+}
+#S9.card {
+    background-image: url('cards/S9.png');
+}
+#S10.card {
+    background-image: url('cards/S10.png');
+}
+#SJ.card {
+    background-image: url('cards/SJ.png');
+}
+#SQ.card {
+    background-image: url('cards/SQ.png');
+}
+#SK.card {
+    background-image: url('cards/SK.png');
+}
+#SA.card {
+    background-image: url('cards/SA.png');
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .card.hidden {
+        background-image: url('cards/BACK.svg');
+    }
+    /* HEARTS */
+    #H2.card {
+        background-image: url('cards/H2.svg');
+    }
+    #H3.card {
+        background-image: url('cards/H3.svg');
+    }
+    #H4.card {
+        background-image: url('cards/H4.svg');
+    }
+    #H5.card {
+        background-image: url('cards/H5.svg');
+    }
+    #H6.card {
+        background-image: url('cards/H6.svg');
+    }
+    #H7.card {
+        background-image: url('cards/H7.svg');
+    }
+    #H8.card {
+        background-image: url('cards/H8.svg');
+    }
+    #H9.card {
+        background-image: url('cards/H9.svg');
+    }
+    #H10.card {
+        background-image: url('cards/H10.svg');
+    }
+    #HJ.card {
+        background-image: url('cards/HJ.svg');
+    }
+    #HQ.card {
+        background-image: url('cards/HQ.svg');
+    }
+    #HK.card {
+        background-image: url('cards/HK.svg');
+    }
+    #HA.card {
+        background-image: url('cards/HA.svg');
+    }
+
+    /* DIAMONDS */
+    #D2.card {
+        background-image: url('cards/D2.svg');
+    }
+    #D3.card {
+        background-image: url('cards/D3.svg');
+    }
+    #D4.card {
+        background-image: url('cards/D4.svg');
+    }
+    #D5.card {
+        background-image: url('cards/D5.svg');
+    }
+    #D6.card {
+        background-image: url('cards/D6.svg');
+    }
+    #D7.card {
+        background-image: url('cards/D7.svg');
+    }
+    #D8.card {
+        background-image: url('cards/D8.svg');
+    }
+    #D9.card {
+        background-image: url('cards/D9.svg');
+    }
+    #D10.card {
+        background-image: url('cards/D10.svg');
+    }
+    #DJ.card {
+        background-image: url('cards/DJ.svg');
+    }
+    #DQ.card {
+        background-image: url('cards/DQ.svg');
+    }
+    #DK.card {
+        background-image: url('cards/DK.svg');
+    }
+    #DA.card {
+        background-image: url('cards/DA.svg');
+    }
+
+    /* CLUBS */
+    #C2.card {
+        background-image: url('cards/C2.svg');
+    }
+    #C3.card {
+        background-image: url('cards/C3.svg');
+    }
+    #C4.card {
+        background-image: url('cards/C4.svg');
+    }
+    #C5.card {
+        background-image: url('cards/C5.svg');
+    }
+    #C6.card {
+        background-image: url('cards/C6.svg');
+    }
+    #C7.card {
+        background-image: url('cards/C7.svg');
+    }
+    #C8.card {
+        background-image: url('cards/C8.svg');
+    }
+    #C9.card {
+        background-image: url('cards/C9.svg');
+    }
+    #C10.card {
+        background-image: url('cards/C10.svg');
+    }
+    #CJ.card {
+        background-image: url('cards/CJ.svg');
+    }
+    #CQ.card {
+        background-image: url('cards/CQ.svg');
+    }
+    #CK.card {
+        background-image: url('cards/CK.svg');
+    }
+    #CA.card {
+        background-image: url('cards/CA.svg');
+    }
+
+    /* SPASES */
+    #S2.card {
+        background-image: url('cards/S2.svg');
+    }
+    #S3.card {
+        background-image: url('cards/S3.svg');
+    }
+    #S4.card {
+        background-image: url('cards/S4.svg');
+    }
+    #S5.card {
+        background-image: url('cards/S5.svg');
+    }
+    #S6.card {
+        background-image: url('cards/S6.svg');
+    }
+    #S7.card {
+        background-image: url('cards/S7.svg');
+    }
+    #S8.card {
+        background-image: url('cards/S8.svg');
+    }
+    #S9.card {
+        background-image: url('cards/S9.svg');
+    }
+    #S10.card {
+        background-image: url('cards/S10.svg');
+    }
+    #SJ.card {
+        background-image: url('cards/SJ.svg');
+    }
+    #SQ.card {
+        background-image: url('cards/SQ.svg');
+    }
+    #SK.card {
+        background-image: url('cards/SK.svg');
+    }
+    #SA.card {
+        background-image: url('cards/SA.svg');
+    }
+}
